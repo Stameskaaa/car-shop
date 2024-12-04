@@ -1,0 +1,21 @@
+.header {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 94px;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navigation a {
+  transition: color 0.2s;
+  &:hover {
+    color: rgba(235, 28, 36, 1);
+  }
+}
