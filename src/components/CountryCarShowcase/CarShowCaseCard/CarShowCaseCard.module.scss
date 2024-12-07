@@ -1,0 +1,60 @@
+.container {
+  height: 297px;
+  width: 834px;
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(to right, rgba(19, 18, 18, 0.83) 23%, rgba(0, 0, 0, 0) 100%);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  button {
+    margin-top: auto;
+    color: rgba(255, 255, 255);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    backdrop-filter: blur(8px);
+    background-color: rgba(146, 146, 146, 0.8);
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.1s;
+
+    &:hover {
+      background-color: rgba(146, 146, 146, 1);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    &:active {
+      background-color: rgba(100, 100, 100, 0.9);
+      transform: scale(0.97);
+    }
+
+    &:focus {
+      background-color: rgba(146, 146, 146, 1);
+    }
+  }
+}

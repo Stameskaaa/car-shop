@@ -1,3 +1,7 @@
+.wrapper__header {
+  display: flex;
+  justify-content: center;
+}
 .header {
   padding: 18px;
   display: flex;
@@ -5,6 +9,9 @@
   justify-content: space-between;
   height: 94px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 1780px;
+  gap: 10px;
 }
 
 .navigation {
@@ -17,5 +24,44 @@
   transition: color 0.2s;
   &:hover {
     color: rgba(235, 28, 36, 1);
+  }
+}
+
+.number__block {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.number {
+  font-size: 1.2rem;
+}
+
+.number__text {
+  color: rgba(117, 117, 117, 1);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .header > svg:first-of-type {
+    width: 70px;
+  }
+  .number__block {
+    flex-wrap: wrap;
+    width: 152px;
+    justify-content: flex-end;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 700px) {
+  .number__block {
+    display: none;
   }
 }

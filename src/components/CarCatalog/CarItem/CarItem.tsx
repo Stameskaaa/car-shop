@@ -4,7 +4,7 @@ interface Props {
   img: string;
   name: string;
   year: number;
-  size: number;
+  size: string;
   driveType: string;
   fuelType: string;
   transmissionType: string;
@@ -26,7 +26,7 @@ export const CarItem: React.FC<Props> = ({
       <img className={styles.image} src={img} alt="Car" />
       <h1 className={styles.header}>{name}</h1>
       <p className={styles.info}>
-        {year} • {size} • {driveType} • {fuelType} • {transmissionType}
+        {year} • {size} л • {driveType} • {fuelType} • {transmissionType}
       </p>
       <div className={styles.price__block}>
         <p>{price}</p> <button>Оставить заявку</button>

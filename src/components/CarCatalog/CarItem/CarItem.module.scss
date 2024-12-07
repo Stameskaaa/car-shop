@@ -7,6 +7,7 @@
   border-radius: 20px;
   max-width: 411px;
   box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(131, 130, 130, 0.3);
 }
 
 .image {
@@ -29,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .price__block p {
