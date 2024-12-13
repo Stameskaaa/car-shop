@@ -65,3 +65,51 @@
     display: none;
   }
 }
+
+.about__popup_container {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 0;
+  &:hover {
+    .about_popup {
+      animation: appearance 0.5s forwards;
+    }
+  }
+}
+
+.about_popup {
+  padding: 16px;
+  visibility: hidden;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 100%;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  display: flex;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  span {
+    font-size: 14px;
+    transition: color 0.1s;
+    &:hover {
+      color: rgba(235, 28, 36, 1);
+    }
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

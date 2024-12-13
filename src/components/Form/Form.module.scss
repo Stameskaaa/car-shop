@@ -5,5 +5,130 @@
   padding: 40px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
-  height: 600px;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+
+  input {
+    height: 46px;
+    min-width: 200px;
+  }
+  label {
+    font-size: 14px;
+    color: rgba(25, 25, 25, 1);
+    span {
+      color: rgba(117, 117, 117, 1);
+    }
+  }
+  textarea {
+    width: 100%;
+    resize: none;
+    overscroll-behavior: none;
+  }
+}
+
+.inputGroup {
+  width: calc(50% - 10px);
+  min-width: 200px;
+}
+
+.areaGroup {
+  width: 100%;
+}
+
+.formGroup input,
+.formGroup textarea {
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  background-color: rgba(248, 248, 248, 1);
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 10px;
+  &:hover,
+  &:focus {
+    background-color: rgba(235, 235, 235, 1);
+  }
+}
+
+.checkBoxGroup {
+  display: flex;
+  flex-direction: row;
+  width: calc(50% - 10px);
+  min-width: 180px;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  flex-grow: 1;
+
+  input[type='checkbox'] {
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+  }
+
+  input:checked + label::before {
+    background-color: rgba(22, 115, 254, 1);
+    border-color: rgba(22, 115, 254, 1);
+  }
+
+  label {
+    font-size: 14px;
+    color: rgba(25, 25, 25, 1);
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid rgba(196, 196, 196, 1);
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      width: 14px;
+      height: 10px;
+      border-bottom: 4px solid white;
+      border-left: 4px solid white;
+      box-sizing: border-box;
+      transform: rotate(-45deg);
+    }
+
+    span {
+      color: rgba(22, 115, 254, 1);
+    }
+  }
+}
+
+.buttonGroup {
+  flex-grow: 1;
+  button {
+    width: 100% !important;
+  }
 }
