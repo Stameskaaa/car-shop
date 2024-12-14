@@ -27,7 +27,6 @@
 
   input {
     height: 46px;
-    min-width: 200px;
   }
   label {
     font-size: 14px;
@@ -46,6 +45,10 @@
 .inputGroup {
   width: calc(50% - 10px);
   min-width: 200px;
+  @media (max-width: 400px) {
+    min-width: 0px;
+    width: 100%;
+  }
 }
 
 .areaGroup {
