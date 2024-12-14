@@ -1,0 +1,45 @@
+.container {
+  padding: 16px;
+  background-color: rgba(248, 248, 248, 1);
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 552px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgba(25, 25, 25, 1);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.item_info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: calc(100% - 74px);
+  min-width: 240px;
+  gap: 10px;
+}
+
+.item_info h1 {
+  font-size: 16px;
+}
+
+.item_info p {
+  font-size: 14px;
+  max-width: 350px;
+}
+
+.item_info p {
+  font-size: 14px;
+}
+
+.item_date {
+  color: rgba(117, 117, 117, 1);
+  font-size: 14px;
+}
