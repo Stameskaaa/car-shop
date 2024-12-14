@@ -10,6 +10,7 @@ import {
   victor,
   leonid,
 } from '../../assets/reviewsPeople/reviewsExport/reviewsExport';
+import { StarIcon } from '../../icons/StarIcon/StarIcon';
 
 const reviewsList = [
   {
@@ -157,6 +158,19 @@ const reviewsList = [
 export const SwiperComponent = () => {
   return (
     <div className="swiper-wrapper--custom">
+      <h1 className="Swiper-header">
+        Отзывы клиентов <span>253</span>
+      </h1>
+      <p className="Swiper-header__text">
+        <span>4,5</span>{' '}
+        {[
+          <StarIcon gold />,
+          <StarIcon gold />,
+          <StarIcon gold />,
+          <StarIcon gold />,
+          <StarIcon gold={false} />,
+        ]}
+      </p>
       <Swiper
         slidesPerView={3}
         spaceBetween={20}
