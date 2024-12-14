@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/car-shop/static/css/main.19745bd3.css",
+    "main.js": "/car-shop/static/js/main.d57e3fc3.js",
+    "static/js/453.b4e37621.chunk.js": "/car-shop/static/js/453.b4e37621.chunk.js",
+    "static/media/car2.png": "/car-shop/static/media/car2.fc36a838c73219029165.png",
+    "static/media/AboutUsBack.png": "/car-shop/static/media/AboutUsBack.2f3cf4effbaac4a67c2f.png",
+    "static/media/car1.png": "/car-shop/static/media/car1.5c1c9ac9fbb499d31978.png",
+    "static/media/cars.png": "/car-shop/static/media/cars.20a2f31510e0c21c4711.png",
+    "static/media/car6.png": "/car-shop/static/media/car6.78cd860c5d860b9d7846.png",
+    "static/media/car3.png": "/car-shop/static/media/car3.9a17be1c7e6ef63bf1c9.png",
+    "static/media/car4.png": "/car-shop/static/media/car4.2616cf5e4f99a9e3060b.png",
+    "static/media/car5.png": "/car-shop/static/media/car5.80f50578043bf868de15.png",
+    "static/media/car8.png": "/car-shop/static/media/car8.be9183a6aa10e1a563fa.png",
+    "static/media/car7.png": "/car-shop/static/media/car7.062583bf12a41cd05699.png",
+    "static/media/nastya.png": "/car-shop/static/media/nastya.fa2bb5887751b877ed36.png",
+    "static/media/olga.png": "/car-shop/static/media/olga.fa2bb5887751b877ed36.png",
+    "static/media/leonid.png": "/car-shop/static/media/leonid.2abafc28a4b73a90252a.png",
+    "static/media/victor.png": "/car-shop/static/media/victor.5586088144769009e922.png",
+    "static/media/fernando.png": "/car-shop/static/media/fernando.7193bdae20905a7f3401.png",
+    "index.html": "/car-shop/index.html",
+    "main.19745bd3.css.map": "/car-shop/static/css/main.19745bd3.css.map",
+    "main.d57e3fc3.js.map": "/car-shop/static/js/main.d57e3fc3.js.map",
+    "453.b4e37621.chunk.js.map": "/car-shop/static/js/453.b4e37621.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19745bd3.css",
+    "static/js/main.d57e3fc3.js"
+  ]
+}
